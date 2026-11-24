@@ -1,0 +1,80 @@
+{
+  "model": "Linear Regression",
+  "mae_test": 791.0023773132336,
+  "r2_test": 0.8765494410543437,
+  "pilihan": {
+    "fuel_type": [
+      "Diesel",
+      "Electric",
+      "Petrol"
+    ],
+    "brand": [
+      "BMW",
+      "Chevrolet",
+      "Ford",
+      "Honda",
+      "Hyundai",
+      "Kia",
+      "Nissan",
+      "Tesla",
+      "Toyota",
+      "Volkswagen"
+    ],
+    "transmission": [
+      "Automatic",
+      "Manual"
+    ],
+    "color": [
+      "Black",
+      "Blue",
+      "Gray",
+      "Red",
+      "Silver",
+      "White"
+    ],
+    "service_history": [
+      "Full",
+      "Partial",
+      "Unknown"
+    ],
+    "insurance_valid": [
+      "No",
+      "Yes"
+    ]
+  },
+  "min_max": {
+    "mileage_kmpl": [
+      5.0,
+      35.0
+    ],
+    "engine_cc": [
+      800.0,
+      5000.0
+    ],
+    "owner_count": [
+      1.0,
+      5.0
+    ],
+    "accidents_reported": [
+      0.0,
+      5.0
+    ],
+    "car_age": [
+      3.0,
+      31.0
+    ]
+  },
+  "urutan_kolom": [
+    "mileage_kmpl",
+    "engine_cc",
+    "fuel_type",
+    "owner_count",
+    "brand",
+    "transmission",
+    "color",
+    "service_history",
+    "accidents_reported",
+    "insurance_valid",
+    "car_age"
+  ]
+}

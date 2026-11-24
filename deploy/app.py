@@ -2,14 +2,22 @@ import streamlit as st
 import pandas as pd
 import joblib
 import json
+import os
 
-model = joblib.load('deploy/model_mobil.pkl')
-with open('info.json') as f:
+# Ambil lokasi direktori tempat app.py ini berada
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Buat path relatif otomatis ke file-file di folder yang sama
+MODEL_PATH = os.path.join(BASE_DIR, 'model_mobil.pkl')
+INFO_PATH = os.path.join(BASE_DIR, 'info.json')
+
+# Load model dan file info.json
+model = joblib.load(MODEL_PATH)
+with open(INFO_PATH, 'r') as f:
     info = json.load(f)
 
 pilihan = info['pilihan']
 mm = info['min_max']
-
 st.title('Prediksi Harga Mobil Bekas')
 st.write('Model:', info['model'], '| R2 test:', round(info['r2_test'], 3), '| MAE test: $', round(info['mae_test']))
 

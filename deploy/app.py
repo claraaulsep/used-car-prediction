@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import json
 
-model = joblib.load('deploy/model_mobil.pkl')
+model = joblib.load('model_mobil.pkl')
 with open('info.json') as f:
     info = json.load(f)
 

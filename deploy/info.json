@@ -1,6 +1,6 @@
 {
   "model": "Linear Regression",
-  "mae_test": 791.0023773132336,
+  "mae_test": 791.0023773132339,
   "r2_test": 0.8765494410543437,
   "pilihan": {
     "fuel_type": [
